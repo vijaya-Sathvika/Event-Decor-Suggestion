@@ -15,7 +15,7 @@ const App = () => {
   // Function to check if the user is authenticated (you can use session or a JWT token for this)
   const checkAuthentication = async () => {
     try {
-      const response = await fetch('http:localhost:3000/api/check-auth'); // Create this API endpoint in your backend
+      const response = await fetch('https://event-decor-suggestion-backend.onrender.com/api/check-auth'); // Create this API endpoint in your backend
       // const response = await fetch('/api/check-auth'); // Create this API endpoint in your backend
       if (response.ok) {
         setIsAuthenticated(true);
